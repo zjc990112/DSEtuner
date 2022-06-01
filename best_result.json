@@ -1,0 +1,20 @@
+{
+    "Core": {
+        "buffer size": "1024 KB",
+        "buffer bandwidth": "400 GB/s",
+        "MAC number": "10",
+        "NoC bandwidth": "400 GB/s",
+        "NoC router design": "normal"
+    },
+    "Reticle": {
+        "inter-reticle bandwidth": "400 GB/s",
+        "latency": "4 ns",
+        "core array width": "4",
+        "core array height": "4"
+    },
+    "Wafer": {
+        "off-chip memory bandwidth": "400 GB/s",
+        "reticle width": "16",
+        "reticle height": "16"
+    }
+}

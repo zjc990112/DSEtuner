@@ -1,0 +1,81 @@
+{
+    "Core" : {
+        "buffer size": {
+            "initial value": 32,
+            "end value": 1024,
+            "style": "exponential",
+            "scale" : 2,
+            "unit": "KB"
+        },
+        "buffer bandwidth":{
+            "initial value": 100,
+            "end value": 400,
+            "style": "linear",
+            "scale": 100,
+            "unit": "GB/s"
+        },
+        "MAC number": {
+            "initial value": 2,
+            "end value": 10,
+            "style": "linear",
+            "scale": 1
+        },
+        "NoC bandwidth": {
+            "initial value": 100,
+            "end value": 400,
+            "style": "linear",
+            "scale": 100,
+            "unit": "GB/s"
+        },
+        "NoC router design":["buffer-less", "normal"]
+    },
+    "Reticle": {
+        "inter-reticle bandwidth": {
+            "initial value": 100,
+            "end value": 400,
+            "style": "linear",
+            "scale": 100,
+            "unit": "GB/s"
+        },
+        "latency": {
+            "initial value": 1,
+            "end value": 4,
+            "style": "linear",
+            "scale": 1,
+            "unit": "ns"
+        },
+        "core array width": {
+            "initial value": 1,
+            "end value": 4,
+            "style": "exponential",
+            "scale": 2
+        },
+        "core array height" :{
+            "initial value": 1,
+            "end value": 4,
+            "style": "exponential",
+            "scale": 2
+        }
+    },
+    "Wafer": {
+        "off-chip memory bandwidth": {
+            "initial value": 100,
+            "end value": 400,
+            "style": "linear",
+            "scale": 100,
+            "unit": "GB/s"
+        },
+        "reticle width": {
+            "initial value": 1,
+            "end value": 16,
+            "style": "exponential",
+            "scale": 2
+        },
+        "reticle height": {
+            "initial value": 1,
+            "end value": 16,
+            "style": "exponential",
+            "scale": 2
+        }
+    }
+}
