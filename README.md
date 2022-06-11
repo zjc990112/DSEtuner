@@ -5,7 +5,7 @@ A DSEtuner for spatial architecture
 
 ```shell
 conda create --name dsetuner python=3.8
-conda install --file requirements.txt
+pip install -r requirements.txt
 ```
 
 ## Usage
