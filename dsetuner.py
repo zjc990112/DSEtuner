@@ -15,7 +15,7 @@ from opentuner.measurement import MeasurementInterface
 from opentuner.search.manipulator import (ConfigurationManipulator, 
                                         EnumParameter, 
                                         IntegerParameter)
-from opentuner.search.objective import MaximizeAccuracy
+from opentuner.search.objective import *
 from opentuner.measurement.inputmanager import FixedInputManager
 
 
@@ -30,7 +30,7 @@ parser.add_argument('--simulator',  dest = 'simulator_file', default="./simulato
 class DSE(MeasurementInterface):
     def __init__(self, args):
         super(DSE, self).__init__(args, 
-            objective=MaximizeAccuracy(),
+            objective=MinimizeTime(),
             input_manager=FixedInputManager())
         self.setting = json.load(open(args.setting_file, "r"))
         self.simulator_file = args.simulator_file
@@ -40,7 +40,7 @@ class DSE(MeasurementInterface):
         
         data = self.construct_dict(cfg)
         performance = self.simulate_performance(data)
-        return opentuner.resultsdb.models.Result(time=0.0, accuracy=performance)
+        return opentuner.resultsdb.models.Result(time=performance)
 
     def construct_dict(self, cfg, use_unit=False):
         data = {}
