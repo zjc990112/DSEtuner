@@ -1,30 +1,30 @@
 {
     "Core" : {
         "buffer size": {
-            "initial value": 32,
+            "initial value": 4,
             "end value": 1024,
             "style": "exponential",
             "scale" : 2,
             "unit": "KB"
         },
         "buffer bandwidth":{
-            "initial value": 100,
-            "end value": 400,
+            "initial value": 128,
+            "end value": 512,
             "style": "linear",
-            "scale": 100,
+            "scale": 64,
             "unit": "GB/s"
         },
         "MAC number": {
-            "initial value": 2,
-            "end value": 10,
+            "initial value": 4,
+            "end value": 32,
             "style": "linear",
             "scale": 1
         },
         "NoC bandwidth": {
-            "initial value": 100,
-            "end value": 400,
+            "initial value": 4,
+            "end value": 128,
             "style": "linear",
-            "scale": 100,
+            "scale": 4,
             "unit": "GB/s"
         },
         "NoC router design":["buffer-less", "normal"]

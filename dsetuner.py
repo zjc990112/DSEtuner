@@ -15,6 +15,7 @@ from opentuner.measurement import MeasurementInterface
 from opentuner.search.manipulator import (ConfigurationManipulator, 
                                         EnumParameter, 
                                         IntegerParameter)
+# from opentuner.search.objective import MaximizeAccuracy
 from opentuner.search.objective import *
 from opentuner.measurement.inputmanager import FixedInputManager
 
@@ -85,7 +86,7 @@ class DSE(MeasurementInterface):
         #print(f"get raw data {raw_data.stdout}")
         performance = json.loads(raw_data.stdout)["performance"]
         
-        os.remove(file_name)
+        # os.remove(file_name)
         #print(f"get a performance number of {performance}")
         return performance
 
