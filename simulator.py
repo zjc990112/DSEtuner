@@ -26,7 +26,7 @@ def get_performance(parameter):
     core_NoC_bandwidth = parameter["Core"]["NoC bandwidth"]
     
     os.chdir("../focus_scheduler")
-    os.system(f"python3 interface.py -bm benchmark/16_16.yaml -d 8 -b 8 -fr {noc_bw}-{noc_bw}-4 tesd --buffersize {core_buffer_size} --bufferbw {core_buffer_bandwidth} --macnum {core_MAC_number} --nocbw {noc_bw} > simulation.log")
+    os.system(f"python3 interface.py -bm benchmark/small_test.yaml -d 8 -b 8 -fr {noc_bw}-{noc_bw}-4 tesd --buffersize {core_buffer_size} --bufferbw {core_buffer_bandwidth} --macnum {core_MAC_number} --nocbw {noc_bw} > simulation.log")
     # os.system(f"python3 interface.py -bm benchmark/8_8.yaml -d 8 -b 8 -fr 1024-1024-512 tesd --buffersize {core_buffer_size} --bufferbw {core_buffer_bandwidth} --macnum {core_MAC_number} --nocbw {core_NoC_bandwidth} > simulation.log")
     # os.system(f"python3 interface.py -bm benchmark/small_test.yaml -d 4 -b 8 -fr {noc_bw}-{noc_bw}-4 tesd --buffersize {core_buffer_size} --bufferbw {core_buffer_bandwidth} --macnum {core_MAC_number} --nocbw {core_NoC_bandwidth} > simulation.log")
     os.chdir("../DSEtuner")

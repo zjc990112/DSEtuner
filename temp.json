@@ -1,0 +1,20 @@
+{
+    "Core": {
+        "buffer size": 8,
+        "buffer bandwidth": 192,
+        "MAC number": 14,
+        "NoC bandwidth": 20,
+        "NoC router design": "normal"
+    },
+    "Reticle": {
+        "inter-reticle bandwidth": 100,
+        "latency": 2,
+        "core array width": 4,
+        "core array height": 2
+    },
+    "Wafer": {
+        "off-chip memory bandwidth": 200,
+        "reticle width": 4,
+        "reticle height": 1
+    }
+}
